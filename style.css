@@ -1,33 +1,58 @@
-/* General page style */
+/* General */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f9f3f3;
-    color: #333333;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
+    background: #fef9f3;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Headings */
-h1 {
-    color: #b22222;
+/* Header */
+header {
     text-align: center;
-    margin-bottom: 20px;
+    padding: 40px 20px;
+    background: #ffd6d6;
+    color: #333;
 }
 
-/* Links */
-a {
-    color: #1e90ff;
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Poems section */
+.poems {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.poem-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #ffabab;
+    color: #fff;
     text-decoration: none;
+    border-radius: 10px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-a:hover {
-    text-decoration: underline;
+.poem-link:hover {
+    background-color: #ff7a7a;
+    transform: scale(1.05);
 }
 
-/* Paragraphs */
-p {
-    max-width: 700px;
-    margin: 15px auto;
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffd6d6;
+    margin-top: 50px;
 }
