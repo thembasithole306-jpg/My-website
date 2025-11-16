@@ -67,4 +67,20 @@ footer {
     color: #333;
     margin-top: 40px;
 }
+/* Poem page container (keeps poem spacing consistent) */
+.poem-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* light grey body for poem */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.poem-container p {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.8;
+}
 
