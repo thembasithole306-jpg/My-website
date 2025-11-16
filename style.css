@@ -2,83 +2,69 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #ffffff, #b3d1ff); /* white to baby blue */
-    color: #333; /* text color */
+    background: linear-gradient(to bottom, #ffffff, #b3d1ff);
+    color: #333;
     margin: 0;
     padding: 0;
 }
-
 
 /* Header */
 header {
     text-align: center;
     padding: 40px 20px;
     background: #b3d1ff; /* baby blue */
-    color: #222; /* dark grey for contrast */
+    color: #222;
 }
 
 header h1 {
     font-size: 2.5rem;
-}
-
-header .subtitle {
-    font-size: 1.2rem;
-    color: #555; /* medium grey */
-}
-
-/* Main Poem Container */
-.poem-container {
-    max-width: 800px;
-    margin: 30px auto; /* centers content */
-    padding: 20px;
-    background-color: #f2f2f2; /* light grey */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Poem Content */
-.poem-content p {
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 10px; /* small left padding for readability */
-}
-
-/* Poem Links on Home */
-.poem-link {
-    display: block;
     margin-bottom: 10px;
-    font-weight: bold;
-    color: #222; /* dark grey */
-    text-decoration: none;
 }
 
-.poem-link:hover {
-    color: #0055aa; /* darker baby blue on hover */
-    text-decoration: underline;
+.subtitle {
+    font-size: 1.2rem;
+    color: #444;
 }
-/* Main container for homepage */
+
+/* Main container */
 .main-container {
-    max-width: 900px;      /* Keeps content from stretching too wide */
-    margin: 40px auto;     /* Centers the container */
-    padding: 20px;         /* Space inside the container */
-    background: #f0f8ff;   /* Baby blue background */
-    border-radius: 10px;   /* Rounded edges */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Poems section */
+.poems-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.poems-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 /* Poem links */
-.poem-link {
-    display: block;           /* Each link on its own line */
-    font-size: 1.3rem;
-    color: #004080;           /* Dark blue text */
+.poem-link, .view-all a {
+    font-size: 1.2rem;
+    color: #0047ab;
     text-decoration: none;
-    margin: 15px 0;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
+    font-weight: bold;
 }
 
-.poem-link:hover {
-    background: #d9eaff;   /* Light blue highlight */
-    color: #001f40;         /* Darker text on hover */
+.poem-link:hover, .view-all a:hover {
+    text-decoration: underline;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e6f0ff;
+    color: #333;
+    margin-top: 40px;
+}
+
