@@ -2,87 +2,56 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #fef9f3, #ffe6e6);
-    color: #333;
+    background: linear-gradient(to bottom, #ffffff, #b3d1ff); /* white to baby blue */
+    color: #333; /* text color */
     margin: 0;
     padding: 0;
 }
-
 
 /* Header */
 header {
     text-align: center;
     padding: 40px 20px;
-    background: #b3d1ff;
-    color: #222;
+    background: #b3d1ff; /* baby blue */
+    color: #222; /* dark grey for contrast */
 }
 
 header h1 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
 }
 
 header .subtitle {
     font-size: 1.2rem;
-    color: #555;
-    font-style: italic;
-    margin-top: 5px;
+    color: #555; /* medium grey */
 }
 
-
-/* Poems section */
-.poems {
+/* Main Poem Container */
+.poem-container {
     max-width: 800px;
-    text-align: center;
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 30px auto; /* centers content */
+    padding: 20px;
+    background-color: #f2f2f2; /* light grey */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Poem Content */
+.poem-content p {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px; /* small left padding for readability */
+}
+
+/* Poem Links on Home */
 .poem-link {
-    display: inline-block;
-    margin: 10px 0;
-    padding: 8px 15px;
-    background-color: #ffd6d6;
-    color: #1a73e8;
-    text-decoration: none;
-    border-radius: 8px;
+    display: block;
+    margin-bottom: 10px;
     font-weight: bold;
-    transition: background 0.3s ease;
+    color: #222; /* dark grey */
+    text-decoration: none;
 }
 
 .poem-link:hover {
-    background-color: #ffbaba;
-    transform: scale(1.05);
-    text -decoration: none;
-    color: #0c47a1;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffd6d6;
-    margin-top: 50px;
-}
-
-
-.poem-container {
-    max-width: 800px;       /* keeps text from stretching too far */
-    margin-left: auto;      /* pushes container away from left edge */
-    margin-right: auto;     /* pushes container away from right edge */
-    padding: 20px;          /* space inside container */
-    background-color: #ffffff;
-    border-radius: 10px;
-    line-height: 1.6;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.poem-container p { 
-    margin-bottom: 15px; /* Space between stanzas */ 
-    text-indent: 20px; /* Indent first line */ 
-    line-height: 1.8; /* Comfortable spacing */ 
-    white-space: pre-line; /* Preserves line breaks */
-}
-main {
-    padding: 20px;
+    color: #0055aa; /* darker baby blue on hover */
+    text-decoration: underline;
 }
