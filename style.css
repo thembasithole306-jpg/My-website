@@ -56,3 +56,13 @@ footer {
     background-color: #ffd6d6;
     margin-top: 50px;
 }
+
+.poem-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 40px;
+    line-height: 1.6;
+    background-color: #fff4f4; /* light background for poem */
+    border-radius: 8px;
+}
+
