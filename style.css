@@ -84,3 +84,29 @@ footer {
     line-height: 1.8;
 }
 
+/* ================================
+   ANIMATIONS
+================================ */
+
+/* Fade-in animation used for titles and text */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply fade-in to main page content */
+.fade-in {
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Slight hover effect on poem links */
+a:hover {
+    transform: translateX(4px);
+    transition: 0.3s ease;
+}
