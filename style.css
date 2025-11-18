@@ -136,3 +136,31 @@ footer {
 .poem-box a:hover {
     text-decoration: underline;
 }
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto; /* centers content */
+    padding: 20px;
+}
+
+.poem-section p {
+    line-height: 1.7;
+    font-size: 18px;
+    color: #333; /* same as other poems */
+    margin-bottom: 15px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
