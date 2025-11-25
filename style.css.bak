@@ -1,0 +1,166 @@
+/* General */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #ffffff, #b3d1ff); /* white to baby blue */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #b3d1ff; /* baby blue */
+    color: #222; /* dark grey */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+/* Main container */
+.main-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Poems section */
+.poems-section {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.poems-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Poem link box (NEW) */
+.poem-card {
+    background: #d9e8ff; /* very soft baby blue - matches theme */
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 12px;
+    width: 70%;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Make the link look like a button inside the card */
+.poem-link {
+    font-size: 1.15rem;
+    color: #0047ab; /* deep blue */
+    text-decoration: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: transparent;
+}
+
+/* Hover for the link (subtle) */
+.poem-card:hover {
+    transform: translateY(-3px);
+    transition: transform 0.25s ease;
+}
+
+/* View all link */
+.view-all {
+    font-size: 1.1rem;
+    color: #0047ab;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.view-all:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #e6f0ff; /* soft blue */
+    color: #333;
+    margin-top: 40px;
+}
+
+/* Poem page container */
+.poem-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f2f2f2; /* light grey */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.poem-container p {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 10px;
+    line-height: 1.8;
+}
+
+/* Poem boxes for All Poems page */
+.poem-box {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.poem-box a {
+    text-decoration: none;
+    color: #0047ab; /* deep blue */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.poem-box a:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto; /* centers content */
+    padding: 20px;
+}
+
+.poem-section p {
+    line-height: 1.7;
+    font-size: 18px;
+    color: #333; /* same as other poems */
+    margin-bottom: 15px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 40px;
+    color: #666;
+}
