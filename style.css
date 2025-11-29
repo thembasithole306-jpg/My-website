@@ -164,3 +164,119 @@ footer p {
     margin-top: 40px;
     color: #666;
 }
+/* ------------------------
+   Full site CSS (Option D)
+   Includes .poem-navigation
+-------------------------*/
+
+/* Base */
+:root{
+  --bg: #f7f5f2;
+  --card-bg: #ffffff;
+  --accent: #0b57b2;
+  --muted: #666;
+  --max-width: 900px;
+  --radius: 10px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Georgia", serif;
+  background: var(--bg);
+  color:#222;
+  line-height:1.7;
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:40px 20px;
+  background:#fff;
+  border-bottom:1px solid #e4e4e4;
+}
+header h1{margin:0;font-size:2.4rem;color:var(--accent)}
+.subtitle{margin-top:8px;color:var(--muted);font-size:1rem}
+
+/* Nav inside header */
+header nav{margin-top:12px}
+header nav a{
+  padding:8px 12px;
+  background:#f1f1f1;
+  color:#333;
+  text-decoration:none;
+  border-radius:6px;
+  margin:0 6px;
+}
+header nav a:hover{background:#e0e0e0}
+
+/* Main container */
+.main-container{
+  max-width:var(--max-width);
+  margin:34px auto;
+  padding:0 16px 48px;
+}
+
+/* Poem container (shared) */
+.poem-container{
+  background:var(--card-bg);
+  padding:36px 40px;
+  margin:0 auto;
+  border:1px solid #e4e4e4;
+  border-radius:var(--radius);
+  box-shadow: 0 8px 28px rgba(4,21,60,0.06);
+}
+.poem-container p{
+  white-space: pre-line;
+  font-size:1.15rem;
+  margin:0 0 18px 0;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:18px 12px;
+  margin-top:28px;
+  background:#fff;
+  border-top:1px solid #e4e4e4;
+  color:var(--muted);
+}
+
+/* POEM NAVIGATION (previous/next) - placed after poem before footer */
+.poem-navigation{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-top:22px;
+  gap:16px;
+}
+
+/* Links style: left and right */
+.poem-navigation a{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:700;
+  background:#0b57b2;
+  color:#fff;
+  transition:background .18s ease, transform .12s ease;
+}
+.poem-navigation a:hover{
+  background:#0e63d1;
+  transform:translateY(-2px);
+}
+
+/* Disabled placeholder keeps layout */
+.poem-navigation .disabled{
+  visibility:hidden; /* reserved space kept by flex layout */
+  height:38px;
+  width:120px;
+}
+
+/* On narrow screens: stack */
+@media (max-width:520px){
+  .poem-container{padding:20px}
+  .poem-navigation{flex-direction:column; align-items:stretch;}
+  .poem-navigation a, .poem-navigation .disabled{width:100%; text-align:center;}
+}
