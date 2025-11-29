@@ -33,11 +33,9 @@
             <a href="poem_4.html">Poem 4: A Note to Self</a>
         </div>
 
-        <!-- View All Poems Button/Link -->
         <div class="view-all">
             <a href="poems.html">View All Poems</a>
         </div>
-
     </section>
 </div>
 
