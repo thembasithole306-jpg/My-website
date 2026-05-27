@@ -1,282 +1,272 @@
-/* General */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    background: linear-gradient(to bottom, #ffffff, #b3d1ff); /* white to baby blue */
-    color: #333;
+/* =========================
+   INK TO SOUL - OFFICIAL CSS
+========================= */
+
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* Body */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background: linear-gradient(to bottom, #ffffff, #b3d1ff);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* =========================
+   HEADER
+========================= */
+
 header {
+    background: #6ea8ff;
+    color: white;
     text-align: center;
     padding: 40px 20px;
-    background: #b3d1ff; /* baby blue */
-    color: #222; /* dark grey */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     margin-bottom: 10px;
 }
 
 .subtitle {
     font-size: 1.2rem;
-    color: #444;
+    margin-bottom: 20px;
+    color: white;
 }
 
-/* Main container */
+/* Navigation */
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: opacity 0.3s ease;
+}
+
+header nav a:hover {
+    opacity: 0.7;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
 .main-container {
     max-width: 900px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Poems section */
+/* =========================
+   POEM CONTAINER
+========================= */
+
+.poem-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.poem-container:hover {
+    transform: translateY(-3px);
+}
+
+.poem-container p {
+    margin-bottom: 25px;
+    font-size: 1.08rem;
+    color: #333;
+}
+
+/* =========================
+   POEM NAVIGATION
+========================= */
+
+.poem-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+}
+
+/* Previous / Next buttons */
+.poem-navigation a {
+    background: #6ea8ff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.poem-navigation a:hover {
+    background: #4f8df5;
+    transform: translateY(-2px);
+}
+
+/* Hidden button spacing */
+.disabled {
+    visibility: hidden;
+}
+
+/* =========================
+   POEMS PAGE
+========================= */
+
 .poems-section {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .poems-section h2 {
     font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-/* Poem link box (NEW) */
-.poem-card {
-    background: #d9e8ff; /* very soft baby blue - matches theme */
-    padding: 15px;
-    margin: 15px auto;
-    border-radius: 12px;
-    width: 70%;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Make the link look like a button inside the card */
-.poem-link {
-    font-size: 1.15rem;
-    color: #0047ab; /* deep blue */
-    text-decoration: none;
-    font-weight: 700;
-    padding: 10px 20px;
-    border-radius: 8px;
-    background: transparent;
-}
-
-/* Hover for the link (subtle) */
-.poem-card:hover {
-    transform: translateY(-3px);
-    transition: transform 0.25s ease;
-}
-
-/* View all link */
-.view-all {
-    font-size: 1.1rem;
-    color: #0047ab;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.view-all:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #e6f0ff; /* soft blue */
+    margin-bottom: 30px;
     color: #333;
-    margin-top: 40px;
 }
 
-/* Poem page container */
-.poem-container {
-    max-width: 800px;
-    margin: 30px auto;
-    padding: 20px;
-    background-color: #f2f2f2; /* light grey */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.poem-container p {
-    margin-bottom: 20px;
-    text-align: left;
-    padding-left: 10px;
-    line-height: 1.8;
-}
-
-/* Poem boxes for All Poems page */
+/* Poem Boxes */
 .poem-box {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background: white;
+    padding: 25px;
     margin: 20px auto;
-    max-width: 600px;
-    text-align: center;
+    border-radius: 15px;
+    max-width: 650px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
 }
 
+.poem-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Poem Links */
 .poem-box a {
     text-decoration: none;
-    color: #0047ab; /* deep blue */
+    color: #4f8df5;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .poem-box a:hover {
+    opacity: 0.8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #6ea8ff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .poem-container {
+        padding: 25px;
+    }
+
+    .poem-navigation {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .poem-navigation a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =========================
+   HOMEPAGE ATMOSPHERE
+========================= */
+
+.intro-section{
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+    text-align: center;
+}
+
+.intro-section h2{
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    color: #0047ab;
+}
+
+.intro-section p{
+    font-size: 1.1rem;
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 18px;
+}
+
+/* Better poem cards */
+.poem-card{
+    background: #ffffff;
+    padding: 22px;
+    margin: 22px auto;
+    border-radius: 14px;
+    width: 78%;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+    transition:
+      transform 0.25s ease,
+      box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.poem-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+/* Poem links */
+.poem-link{
+    text-decoration: none;
+    color: #0047ab;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* View all poems */
+.view-all{
+    display: inline-block;
+    margin-top: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #5a189a;
     text-decoration: underline;
 }
 
-.main-container {
-    max-width: 800px;
-    margin: 0 auto; /* centers content */
-    padding: 20px;
-}
-
-.poem-section p {
-    line-height: 1.7;
-    font-size: 18px;
-    color: #333; /* same as other poems */
-    margin-bottom: 15px;
-}
-
-header h1 {
-    text-align: center;
-}
-
-header nav {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-footer p {
-    text-align: center;
-    margin-top: 40px;
-    color: #666;
-}
-/* ------------------------
-   Full site CSS (Option D)
-   Includes .poem-navigation
--------------------------*/
-
-/* Base */
-:root{
-  --bg: #f7f5f2;
-  --card-bg: #ffffff;
-  --accent: #0b57b2;
-  --muted: #666;
-  --max-width: 900px;
-  --radius: 10px;
-}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family: "Georgia", serif;
-  background: var(--bg);
-  color:#222;
-  line-height:1.7;
-}
-
-/* Header */
-header{
-  text-align:center;
-  padding:40px 20px;
-  background:#fff;
-  border-bottom:1px solid #e4e4e4;
-}
-header h1{margin:0;font-size:2.4rem;color:var(--accent)}
-.subtitle{margin-top:8px;color:var(--muted);font-size:1rem}
-
-/* Nav inside header */
-header nav{margin-top:12px}
-header nav a{
-  padding:8px 12px;
-  background:#f1f1f1;
-  color:#333;
-  text-decoration:none;
-  border-radius:6px;
-  margin:0 6px;
-}
-header nav a:hover{background:#e0e0e0}
-
-/* Main container */
-.main-container{
-  max-width:var(--max-width);
-  margin:34px auto;
-  padding:0 16px 48px;
-}
-
-/* Poem container (shared) */
-.poem-container{
-  background:var(--card-bg);
-  padding:36px 40px;
-  margin:0 auto;
-  border:1px solid #e4e4e4;
-  border-radius:var(--radius);
-  box-shadow: 0 8px 28px rgba(4,21,60,0.06);
-}
-.poem-container p{
-  white-space: pre-line;
-  font-size:1.15rem;
-  margin:0 0 18px 0;
-}
-
-/* Footer */
-footer{
-  text-align:center;
-  padding:18px 12px;
-  margin-top:28px;
-  background:#fff;
-  border-top:1px solid #e4e4e4;
-  color:var(--muted);
-}
-
-/* POEM NAVIGATION (previous/next) - placed after poem before footer */
-.poem-navigation{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-top:22px;
-  gap:16px;
-}
-
-/* Links style: left and right */
-.poem-navigation a{
-  display:inline-block;
-  padding:10px 16px;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:700;
-  background:#0b57b2;
-  color:#fff;
-  transition:background .18s ease, transform .12s ease;
-}
-.poem-navigation a:hover{
-  background:#0e63d1;
-  transform:translateY(-2px);
-}
-
-/* Disabled placeholder keeps layout */
-.poem-navigation .disabled{
-  visibility:hidden; /* reserved space kept by flex layout */
-  height:38px;
-  width:120px;
-}
-
-/* On narrow screens: stack */
-@media (max-width:520px){
-  .poem-container{padding:20px}
-  .poem-navigation{flex-direction:column; align-items:stretch;}
-  .poem-navigation a, .poem-navigation .disabled{width:100%; text-align:center;}
+/* Better spacing */
+.poems-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
