@@ -15,19 +15,73 @@
 
 <body>
 
-    <!-- HERO SECTION -->
+    <!-- HAMBURGER MENU -->
+
+    <div class="menu-toggle" onclick="openMenu()">
+
+        ☰ Menu
+
+    </div>
+
+    <div class="side-menu" id="sideMenu">
+
+        <h2>INK TO SOUL</h2>
+
+        <p>
+            Where words speak and hearts listen.
+        </p>
+
+        <a href="index.html">🏠 Home</a>
+
+        <a href="poems.html">📚 The Collection</a>
+
+        <a href="about.html">👤 About</a>
+
+        <a href="#">💬 Reader Responses <br><small>🚧 Coming Soon</small></a>
+
+        <a href="https://instagram.com/ink.to.soul" target="_blank">
+            📸 Instagram
+        </a>
+
+        <a href="contact.html">
+            ✉️ Contact
+        </a>
+
+        <div class="menu-divider"></div>
+
+        <div class="menu-quote">
+
+            "Some feelings cannot be spoken.
+
+            <br><br>
+
+            So they became poetry."
+
+        </div>
+
+        <div class="close-menu" onclick="closeMenu()">
+
+            ✕ Close
+
+        </div>
+
+    </div>
+
+    <!-- HERO -->
 
     <header class="hero">
 
         <h1>INK TO SOUL</h1>
 
         <p class="subtitle">
+
             A place where words speak and hearts listen
+
         </p>
 
     </header>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
 
     <main class="main-container">
 
@@ -38,20 +92,31 @@
             <h2>Welcome</h2>
 
             <p>
+
                 Some feelings cannot be spoken.
+
                 Some pain cannot be explained.
+
                 Some memories never truly leave.
+
             </p>
 
             <p>
+
                 Ink to Soul is more than poetry.
+
                 It is emotion turned into words.
+
                 A place where silence finally speaks.
+
             </p>
 
             <p>
+
                 Every poem here carries a piece of truth,
+
                 loneliness and growth.
+
             </p>
 
         </section>
@@ -60,8 +125,10 @@
 
         <section>
 
-            <h2 style="text-align:center; color:#2d5da8; margin-bottom:35px;">
+            <h2 style="text-align:center;color:#2d5da8;margin-bottom:35px;">
+
                 Featured Poems
+
             </h2>
 
             <div class="featured-section">
@@ -69,11 +136,15 @@
                 <article class="poem-card">
 
                     <a href="poem_5.html" class="poem-link">
+
                         Who Am I When I Am Not Me?
+
                     </a>
 
                     <p>
-                        A journey through identity, confusion and the silent battles we fight within ourselves.
+
+                        A journey through identity, silence and the battle within.
+
                     </p>
 
                 </article>
@@ -81,11 +152,15 @@
                 <article class="poem-card">
 
                     <a href="poem_1.html" class="poem-link">
+
                         Fragments of a Heart
+
                     </a>
 
                     <p>
+
                         A poem about love, loss and emotional breaking.
+
                     </p>
 
                 </article>
@@ -93,11 +168,15 @@
                 <article class="poem-card">
 
                     <a href="poem_2.html" class="poem-link">
+
                         Echoes of the Soul
+
                     </a>
 
                     <p>
+
                         The overwhelming feeling of loving someone deeply.
+
                     </p>
 
                 </article>
@@ -105,11 +184,15 @@
                 <article class="poem-card">
 
                     <a href="poem_3.html" class="poem-link">
+
                         Spare Wheel
+
                     </a>
 
                     <p>
+
                         Betrayal, distance and the moment love changes.
+
                     </p>
 
                 </article>
@@ -117,11 +200,15 @@
                 <article class="poem-card">
 
                     <a href="poem_4.html" class="poem-link">
+
                         A Note To Self
+
                     </a>
 
                     <p>
+
                         A journey of healing, reflection and rediscovering self-worth.
+
                     </p>
 
                 </article>
@@ -130,37 +217,51 @@
 
         </section>
 
-        <!-- CONTINUE READING -->
-
-        <section class="intro-section" style="margin-top:70px;">
-
-            <h2>More words are waiting for you.</h2>
-
-            <p>
-                Every poem is a different memory.
-            </p>
-
-            <p>
-                Every page carries another emotion,
-                another lesson and another story.
-            </p>
-
-            <p>
-                Continue the journey and discover
-                the rest of the collection.
-            </p>
-
-        </section>
-
-        <!-- COLLECTION BUTTON -->
+        <!-- ENTER COLLECTION -->
 
         <section class="enter-section">
 
             <a href="poems.html" class="enter-button">
 
-                Enter The Collection
+                📚 Enter The Collection
 
             </a>
+
+        </section>
+
+        <!-- ABOUT -->
+
+        <section class="intro-section" style="margin-top:70px;">
+
+            <h2>
+
+                About INK TO SOUL
+
+            </h2>
+
+            <p>
+
+                Behind every poem is a story,
+                a lesson or a piece of a soul.
+
+            </p>
+
+            <p>
+
+                Discover the journey behind the words
+                and the person who chose to write them.
+
+            </p>
+
+            <div style="margin-top:35px;">
+
+                <a href="about.html" class="enter-button">
+
+                    👤 Learn More
+
+                </a>
+
+            </div>
 
         </section>
 
@@ -171,12 +272,31 @@
     <footer>
 
         <p>
+
             © 2025 Themba Gift Sithole | Ink to Soul
+
         </p>
 
     </footer>
 
+    <!-- MENU SCRIPT -->
+
+    <script>
+
+        function openMenu() {
+
+            document.getElementById("sideMenu").classList.add("active");
+
+        }
+
+        function closeMenu() {
+
+            document.getElementById("sideMenu").classList.remove("active");
+
+        }
+
+    </script>
+
 </body>
 
 </html>
-
