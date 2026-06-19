@@ -15,36 +15,68 @@
 
 <body>
 
-    <!-- HAMBURGER MENU -->
+    <!-- MENU BUTTON -->
 
     <div class="menu-toggle" onclick="openMenu()">
 
-        ☰ Menu
+        ☰
 
     </div>
+
+    <!-- DARK OVERLAY -->
+
+    <div class="menu-overlay" id="overlay" onclick="closeMenu()"></div>
+
+    <!-- SIDE MENU -->
 
     <div class="side-menu" id="sideMenu">
 
         <h2>INK TO SOUL</h2>
 
         <p>
+
             Where words speak and hearts listen.
+
         </p>
 
-        <a href="index.html">🏠 Home</a>
+        <a href="index.html">
 
-        <a href="poems.html">📚 The Collection</a>
+            🏠 Home
 
-        <a href="about.html">👤 About</a>
+        </a>
 
-        <a href="#">💬 Reader Responses <br><small>🚧 Coming Soon</small></a>
+        <a href="poems.html">
+
+            📚 The Collection
+
+        </a>
+
+        <a href="about.html">
+
+            👤 About
+
+        </a>
+
+        <a href="#">
+
+            💬 Reader Responses
+
+            <br>
+
+            <small>🚧 Coming Soon</small>
+
+        </a>
 
         <a href="https://instagram.com/ink.to.soul" target="_blank">
+
             📸 Instagram
+
         </a>
 
         <a href="contact.html">
+
             ✉️ Contact
+
         </a>
 
         <div class="menu-divider"></div>
@@ -71,7 +103,11 @@
 
     <header class="hero">
 
-        <h1>INK TO SOUL</h1>
+        <h1>
+
+            INK TO SOUL
+
+        </h1>
 
         <p class="subtitle">
 
@@ -280,22 +316,28 @@
     </footer>
 
     <!-- MENU SCRIPT -->
-
     <script>
 
-        function openMenu() {
+function openMenu(){
 
-            document.getElementById("sideMenu").classList.add("active");
+    document.getElementById("sideMenu").classList.add("active");
 
-        }
+    document.getElementById("overlay").classList.add("active");
 
-        function closeMenu() {
+}
 
-            document.getElementById("sideMenu").classList.remove("active");
+function closeMenu(){
 
-        }
+    document.getElementById("sideMenu").classList.remove("active");
 
-    </script>
+    document.getElementById("overlay").classList.remove("active");
+
+}
+
+     </script> 
+
+
+
 
 </body>
 
